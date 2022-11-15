@@ -27,8 +27,8 @@
             <div class="app-header">
                 <img class="logo" src="img/logo (1).png" alt="Logo Boolean">
 
-                <form>
-                    <input class="todo-input" type="text" placeholder="Aggiungi una task!" minlength="5" required>
+                <form @submit.prevent="onAddingTask">
+                    <input class="todo-input" type="text" placeholder="Aggiungi una task!" v-model="newTask.taskName" minlength="5" required>
                     <button class="submit-btn" type="submit">Aggiungi</button>
                 </form>
             </div>
