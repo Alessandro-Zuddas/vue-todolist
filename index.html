@@ -34,17 +34,12 @@
             </div>
             <div class="app-body">
                 <ul class="tasks-list">
-                    <li class="task done">
-                        Ciao
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li class="task">
-                        Ciao
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li class="task">
-                        Ciao
-                        <i class="fa-solid fa-xmark"></i>
+                    <li class="task" 
+                        v-for="(task, index) in toDoList" 
+                        :class="{ done: task.wasDone === true }"
+                        @click="taskDone(index)">
+                        {{ task.taskName }}
+                        <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                     </li>
                 </ul>
             </div>
