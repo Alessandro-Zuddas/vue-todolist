@@ -22,8 +22,33 @@
     </head>
     <body>
         
-        <div id="app">
+        <div id="app" class="container">
             
+            <div class="app-header">
+                <img class="logo" src="img/logo (1).png" alt="Logo Boolean">
+
+                <form>
+                    <input class="todo-input" type="text" placeholder="Aggiungi una task!" minlength="5" required>
+                    <button class="submit-btn" type="submit">Aggiungi</button>
+                </form>
+            </div>
+            <div class="app-body">
+                <ul class="tasks-list">
+                    <li class="task done">
+                        Ciao
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="task">
+                        Ciao
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="task">
+                        Ciao
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
         <script src="js/main.js"></script>
