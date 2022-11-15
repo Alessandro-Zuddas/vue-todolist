@@ -83,3 +83,7 @@ body{
     text-decoration: line-through;
     background-color: lightgreen;
 }
+
+.task:hover{
+    transform: scale(0.95);
+}
