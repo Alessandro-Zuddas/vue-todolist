@@ -33,7 +33,7 @@
                 </form>
             </div>
             <div class="app-body">
-                <ul class="tasks-list">
+                <ul class="tasks-list" v-if="toDoList.length > 0">
                     <li class="task" 
                         v-for="(task, index) in toDoList" 
                         :class="{ done: task.wasDone === true }">
@@ -41,6 +41,7 @@
                         <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                     </li>
                 </ul>
+                <h2 v-else class="no-task">Nessuna Task nella lista!</h2>
             </div>
 
         </div>

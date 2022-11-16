@@ -87,6 +87,10 @@ body{
     text-decoration: line-through;
 }
 
+.no-task{
+    text-align: center;
+}
+
 .task:hover{
     transform: scale(1.02);
 }
