@@ -38,7 +38,7 @@
                         v-for="(task, index) in toDoList" 
                         :class="{ done: task.wasDone === true }"
                         @click="taskDone(index)">
-                        {{ task.taskName }}
+                        <span :class="{ text_done: task.wasDone === true }">{{ task.taskName }}</span>
                         <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                     </li>
                 </ul>

@@ -80,8 +80,11 @@ body{
 }
 
 .done{
-    text-decoration: line-through;
     background-color: lightgreen;
+}
+
+.text_done{
+    text-decoration: line-through;
 }
 
 .task:hover{
